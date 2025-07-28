@@ -379,3 +379,68 @@ body {
 .contato-item a:hover {
   text-decoration: underline;
 }
+
+
+/* Responsividade completa */
+
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+
+  .sidebar h1,
+  .sidebar p,
+  .formacao {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Remove menu hamburguer */
+  .navbar .logo {
+    display: none !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    background: #111;
+    position: relative;
+    top: 0;
+    gap: 10px;
+  }
+
+  .nav-links li a {
+    padding: 12px;
+    font-size: 15px;
+    border-top: 1px solid #333;
+  }
+
+  .ferramentas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-opcoes {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
