@@ -385,26 +385,19 @@ body {
 
 @media (max-width: 1024px) {
   .layout {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .sidebar {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px 10px;
-  }
-
-  .sidebar h1,
-  .sidebar p,
-  .formacao {
-    width: 100%;
-    text-align: center;
+    width: 280px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 20px;
   }
 
   .content {
-    padding: 30px 20px;
+    padding: 20px;
   }
 }
 
