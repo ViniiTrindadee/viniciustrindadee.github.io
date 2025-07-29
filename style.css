@@ -215,6 +215,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  row-gap: 40px; /* Espaço vertical entre os cards */
 }
 
 .card {
@@ -222,6 +223,7 @@ body {
   border-radius: 12px;
   padding: 20px;
   transition: transform 0.3s;
+  margin-bottom: 40px; /* Garante espaçamento extra individual */
 }
 
 .card:hover {
@@ -346,7 +348,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Remove completamente o menu */
   .menu {
     display: none;
   }
