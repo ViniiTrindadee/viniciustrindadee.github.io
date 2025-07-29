@@ -214,8 +214,12 @@ body {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 50px; /* espaçamento entre os cards (horizontal + vertical) */
-  margin-bottom: 60px; /* espaçamento extra abaixo do grid */
+  gap: 50px; /* espaçamento entre os cards */
+  margin-bottom: 50px; /* espaçamento entre blocos */
+}
+
+.projects + .projects {
+  margin-top: 50px; /* espaçamento entre blocos subsequentes */
 }
 
 .card {
