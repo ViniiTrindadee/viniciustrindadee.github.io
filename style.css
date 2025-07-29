@@ -214,8 +214,8 @@ body {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  row-gap: 40px; /* Espaço vertical entre os cards */
+  gap: 50px; /* espaçamento entre os cards (horizontal + vertical) */
+  margin-bottom: 60px; /* espaçamento extra abaixo do grid */
 }
 
 .card {
@@ -223,7 +223,10 @@ body {
   border-radius: 12px;
   padding: 20px;
   transition: transform 0.3s;
-  margin-bottom: 40px; /* Garante espaçamento extra individual */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover {
@@ -234,7 +237,12 @@ body {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-top: 20px; /* espaçamento entre texto e imagem */
+}
+
+.tags {
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .tags span {
@@ -244,6 +252,7 @@ body {
   padding: 4px 10px;
   font-size: 12px;
   border-radius: 6px;
+  margin-right: 8px;
 }
 
 /* Botão */
@@ -358,6 +367,7 @@ body {
 
   .projects {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .contato-opcoes {
